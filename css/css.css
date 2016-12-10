@@ -1,14 +1,23 @@
+html {
+    background:#f4f4f4
+}
 body{
 }
 div{
 	display: block;
 }
 .wrapper{
-	background: #F4F4F4;
+	background: #f5f5f5;
 }
 .container{
 	margin-left: auto;
 	maring-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	background:#fff;
+	
+	transition:all .25s ease-in-out;
+	-moz-transition:all .25s ease-in-out;
+	-o-transition:all .25s ease-in-out;
+	-webkit-transition:all .25s ease-in-out
 }
