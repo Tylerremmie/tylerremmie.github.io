@@ -1,1 +1,9 @@
-
+body{
+  background: #fff;
+}
+.stretch{
+  background-color: #529ABB;
+  width: 100%;
+  padding: 100px;
+  margin-top: 50px;
+}
