@@ -13,10 +13,11 @@ html {
   background:#fff;
   display: inline-block;
   
-  text-align: left;
+  text-align: center;
   box-shadow: 0px 3px 5px #ccc;
 }
 .comingsoon{
         font-family: 'Open Sans Condensed';
         font-size: 48px;
+        color: #BB3D3E;
 }
