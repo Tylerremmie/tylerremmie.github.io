@@ -4,4 +4,5 @@ body{
 .stretch{
   background-color: #529ABB;
   margin-top: 50px;
+  width: 100%;
 }
