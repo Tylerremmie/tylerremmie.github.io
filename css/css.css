@@ -1,0 +1,14 @@
+body{
+}
+div{
+	display: block;
+}
+.wrapper{
+	background: #F4F4F4;
+}
+.container{
+	margin-left: auto;
+	maring-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
