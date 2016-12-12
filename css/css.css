@@ -18,11 +18,19 @@ html{
 .nav{
   color: #FEFED6;
   position:absolute;
-  top: 30%;
+  top: 10%;
   width: 100%;
 }
 .intro{
-  
+  font-size: 20px;
+  color: #FEFED6;
+  letter-spacing: 3px;
+}
+.description{
+  font-size: 12px;
+  color: #7E0030;
+  letter-spacing: 1px;
+  font-weight: bold;
 }
 a{
   color: #F8E7B5;
