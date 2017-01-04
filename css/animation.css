@@ -1127,7 +1127,7 @@ stretchRight
 
 .blinking-cursor {
   font-weight: 100;
-  font-size: 13px;
+  font-size: 15px;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
