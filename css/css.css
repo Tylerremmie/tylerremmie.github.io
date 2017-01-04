@@ -43,6 +43,58 @@ h1{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
 }
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+@keyframes slideLeft {
+	0% {
+		transform: translateX(100%);
+	}
+	50%{
+		transform: translateX(-8%);
+	}
+	65%{
+		transform: translateX(4%);
+	}
+	80%{
+		transform: translateX(-4%);
+	}
+	95%{
+		transform: translateX(2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}
+}
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(100%);
+	}
+	50%{
+		-webkit-transform: translateX(-8%);
+	}
+	65%{
+		-webkit-transform: translateX(4%);
+	}
+	80%{
+		-webkit-transform: translateX(-4%);
+	}
+	95%{
+		-webkit-transform: translateX(2%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
 
 .terminal{
     max-width: 608px;
@@ -75,12 +127,17 @@ h1{
     height: 100%;
     background-color: #fff;
     padding: 10px;
-    color: #000;
-    font-family: 'Monaco', 'Courier New';
-    text-align: left;
-    font-size: 15px;
-    font-weight: bold;
+    clear: both;
     overflow: hidden;
+    
+    color: #000;
+    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+    
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
