@@ -1126,7 +1126,7 @@ stretchRight
 }
 
 .blinking-cursor {
-  font-weight: 100;
+  font-weight: 30;
   font-size: 15px;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
@@ -1140,7 +1140,7 @@ stretchRight
     color: transparent;
   }
   50% {
-    color: black;
+    color: #fff;
   }
 }
 
@@ -1149,7 +1149,7 @@ stretchRight
     color: transparent;
   }
   50% {
-    color: black;
+    color: #fff;
   }
 }
 
@@ -1158,7 +1158,7 @@ stretchRight
     color: transparent;
   }
   50% {
-    color: black;
+    color: #fff;
   }
 }
 
@@ -1176,6 +1176,6 @@ stretchRight
     color: transparent;
   }
   50% {
-    color: black;
+    color: #fff;
   }
 }
