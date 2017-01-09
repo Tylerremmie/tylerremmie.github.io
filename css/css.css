@@ -1,20 +1,43 @@
 body{
     background: #19232C;
 }
+
 h1{
     color: #BB3F41;
     letter-spacing: -6px;
     font-weight: 900;
     font-family: 'Source Sans Pro', sans-serif;
 }
+a{
+    color: #BB3F41;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
 .holder{
     width: 100%;
-    margin-top: 100px;
+    margin-top: 30%;
+}
+.socialHolder{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
 }
 .centerBox{
     width: 608px;
     margin: 0 auto;
 }
+.socialBox{
+    width: 608px;
+    margin: 0 auto;
+    height: 30px;
+}
+
 .terminalWrap{
     width: 608px;
     margin: 0 auto;
@@ -43,58 +66,8 @@ h1{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 15px;
 }
-.slideLeft{
-	animation-name: slideLeft;
-	-webkit-animation-name: slideLeft;	
 
-	animation-duration: 1s;	
-	-webkit-animation-duration: 1s;
 
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
-
-	visibility: visible !important;	
-}
-@keyframes slideLeft {
-	0% {
-		transform: translateX(100%);
-	}
-	50%{
-		transform: translateX(-8%);
-	}
-	65%{
-		transform: translateX(4%);
-	}
-	80%{
-		transform: translateX(-4%);
-	}
-	95%{
-		transform: translateX(2%);
-	}			
-	100% {
-		transform: translateX(0%);
-	}
-}
-@-webkit-keyframes slideLeft {
-	0% {
-		-webkit-transform: translateX(100%);
-	}
-	50%{
-		-webkit-transform: translateX(-8%);
-	}
-	65%{
-		-webkit-transform: translateX(4%);
-	}
-	80%{
-		-webkit-transform: translateX(-4%);
-	}
-	95%{
-		-webkit-transform: translateX(2%);
-	}			
-	100% {
-		-webkit-transform: translateX(0%);
-	}
-}
 
 .terminal{
     max-width: 608px;
@@ -131,11 +104,11 @@ h1{
     overflow: hidden;
     
     color: #000;
-    font-family: monaco, Consolas, "Lucida Console", monospace;
+    font-family: 'Monaco', 'Courier New';
     font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 20px;
     
     -webkit-transition: all 0.5s ease-out;
