@@ -5,21 +5,8 @@
 body, html {
   height: 100%;
   margin: 0;
-  background-color: #000;
+  background-color: white;
 }
-
-p {
-  color: #000;
-  line-height: normal;
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-
-  padding: 3px 15px 15px;
-  margin: 0;
-  text-align: left;
-}
-
-
 
 .backgroundimage {
   position: relative;
@@ -30,7 +17,7 @@ p {
 }
 
 .backgroundimage {
-  background-image: url("../img/header-plain.jpg");
+  background-image: url("../img/bg2.jpg");
   min-height: 100%;
 }
 
@@ -39,113 +26,92 @@ p {
   left: 0;
   top: 36vh;
   width: 100%;
-  text-align: center;
+  padding: 0px 45vw 0px 5vw;
 }
 
-.signature img {
-  width: 68vw;
+.signature > p {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+span {
+  background: #fff;
+  color: #af601b;
+  padding:  3px 10px;
+  white-space: nowrap; 
 }
 
 .content {
-  background-color: black;
+  background-color: white;
   min-height: 100%;
-}
 
-.info-container {
   display: flex;
-  flex-flow: wrap;
   justify-content: center;
-
-  background: #fff;
-  margin-bottom: 10px;
+  align-content: center;
 }
 
-.info-container > div {
-  width: 60vw;
-  height: auto;
-
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.info-title {
-  letter-spacing: -3px;
-  font-size: 5em;
-  font-weight: 900;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  line-height: .75em;
-
-  color: #000;
-}
-
-.info-title > small {
-  font-size: .75em;
-  letter-spacing: -.5px;
-}
-
-.info-body{
-  line-height: 1.75em;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -.25px;
-  color: #aaa;
-
-  padding: 50px 120px 0px;
-}
-
-.links {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  word-spacing: 50px;
-  
-
-  padding: 40px 120px 0px;
-  text-align: center;
-}
-
-.links > a:link{
-  color: #9A6C19;
-  text-decoration: none;
-}
-
-.links > a:visited{
-  color: #9A6C19;
-  text-decoration: none;
-}
-
-.projects-container {
+.projectsholder {
+  display: -ms-flexbox; /* IE10 */
   display: flex;
-  flex-flow: wrap;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
   justify-content: center;
-  padding: 0 200px;
 }
 
-.projects-container > div {
-  width: 15vw;
-  margin: 10px;
-  height: auto;
-  background: #fff;
+/* Create three equal columns that sits next to each other */
+.projectcolumn {
+  -ms-flex: 20%; /* IE10 */
+  flex: 20%;
+  max-width: 20%;
+  padding: 0 4px;
 }
 
-.project-title {
-  line-height: normal;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #000;
-
-  padding: 5px 15px 0px;
-  text-align: left;
-}
-
-img {
+.projectcolumn img {
+  margin-top: 10px;
+  vertical-align: middle;
   width: 100%;
-  padding: 10px;
+
+  box-shadow: 1px 1px 8px gray;
 }
 
+.dropbtn {
+  background-color:transparent;
+  color: white;
+  padding: 16px;
+  font-size: 30px;
+  border: none;
+
+  margin: 10px 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  z-index: 1;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+
+  margin: 0px 15px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 8px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
 
 /* Tablets (No Parallax) */
 @media only screen and (max-device-width: 1024px) {
@@ -155,24 +121,12 @@ img {
   .signature img {
     width: 90vw;
   }
-
-  .info-body{
-    padding: 50px 0px 0px;
+  .projectcolumn {
+    flex: 50%;
+    max-width: 50%;
   }
-
-  .links {
-    word-spacing: 40px;
-    padding: 40px 0px 0px;
-  }
-
-  .projects-container {
-    padding: 0 0px;
-  }
-
-  /* 3 containers per row */
-  .projects-container > div {
-    width: 26vw;
-    margin: 20px;
+  .signature {
+    padding: 0px 25vw 0px 5vw;
   }
 }
 
@@ -184,37 +138,14 @@ img {
   .signature img {
     width: 90vw;
   }
-
-  .info-title {
-    font-size: 3.5em;
+  .projectcolumn {
+    flex: 100%;
+    max-width: 100%;
   }
-
-  .info-body{
-    padding: 50px 0px 0px;
-    font-size: 12px;
-    text-align: justify;
+  .signature {
+    padding: 0px 5vw 0px 5vw;
   }
-
-  .projects-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 0px;
+  .signature > p {
+    font-size: 1.75em;
   }
-
-  .links {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    word-spacing: 25px;
-    line-height: 5em;
-  
-    padding: 40px 0px 0px;
-    text-align: center;
-  }
-
-  .projects-container > div {
-    width: 90vw;
-    margin: 0 0 20px 0;
-  }
-  
 }
